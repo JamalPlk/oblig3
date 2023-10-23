@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="Css/font/css/solid.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Mini-sko</title>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <a class="logo-img" href="index.html" >
+            <img class="logo" src="./img/Logo front.png" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">Kontakt oss</a></li>
+                <li><a href="om-oss.html">Om Oss</a></li>
+                <li><a href="Produkter.html">Produkter</a></li>
+                <a href="#"><img class="cart-icon" src="./img/cart-shopping-solid.svg" alt="shoppingcart"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Header slutt -->
+    <!-- Main Start  -->
+    <aside>
+        <section class="section-left">
+        <button class="btn btn1">0-3år</button>
+        <button class="btn btn2">3-7år</button>
+        <button class="btn btn3">7år++</button>
+    </section>
+    </aside>
+    <main>
+        
+        <section class="section-right">
+            <div class="row-title">
+                <h1>Produkter</h1>
+
+                <img src="./img/bars-solid.svg" alt="menu-icon" class="menu-icon" id="menuToggle">
+
+            </div>
+
+            <ul class="menu">
+                <li ><a href="index.html">Hjem</a></li>
+                <li><a href="om-oss.html">Om Oss</a></li>
+                <li><a href="Produkter.html">Produkter</a></li>
+                <li><a href="#">Handlekurv</a></li>
+            </ul>
+            </div>
+
+            <main>
+
+                <div class="row-product">
+
+                    <div class="box-product">
+                        <h1>Under Armour</h1>
+                        <ul>
+                            <li>Ergonomisk sål</li>
+                            <li>God passform</li>
+                            <li>Laget i USA</li>
+                        </ul> 
+                        <img src="./img/underr.png" alt="shoes">
+                        <h2>Pris 989kr</h2>
+                    </div>
+                </a>
+                <div class="box-product">
+                    <h1>Nesto</h1>
+                    <ul>
+                        <li>Ergonomisk sål</li>
+                        <li>god pass form</li>
+                        <li>laget i Usa</li>
+                      </ul> 
+                    
+                    <img src="./img/nesto.png" alt="shoes">
+                    <h2>Pris 800kr</h2>
+                </div>
+            </a>
+                <div class="box-product">
+                    <h1>Habro</h1>
+                    <ul>
+                        <li>Ergonomisk sål</li>
+                        <li>god pass form</li>
+                        <li>laget i Usa</li>
+                      </ul> 
+                    
+                    <img src="./img/habro.png" alt="shoes">
+                    <h2>Pris 500kr</h2>
+                </div>
+            </a>
+            </div>
+                
+
+
+            </main>
+    
+    <!-- Main slutt  -->
+
+    <!-- footer start  -->
+    <footer>
+        <a href="#"><img src="./img/instagram.svg" alt="instagram" ></a>
+        <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
+        <a href="#"><img src="./img/facebook-messenger.svg" alt="facebook-messenger"></a>
+    </footer>
+    <!-- footer slutt  -->
+
+
+    <!-- script for hambrugermeny  -->
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menuToggle');
+    const menu = document.querySelector('.menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('show-menu');
+    });
+});
+
+
+</script>
+</body>
+</html>

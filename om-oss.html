@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="Css/font/css/solid.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Mini-sko</title>
+</head>
+
+<!-- Header start -->
+<body>
+    <header>
+        <a class="logo-img" href="index.html" >
+            <img class="logo" src="./img/Logo front.png" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">Kontakt oss</a></li>
+                <li><a href="om-oss.html">Om Oss</a></li>
+                <li><a href="Produkter.html">Produkter</a></li>
+                <a href="#"><img class="cart-icon" src="./img/cart-shopping-solid.svg" alt="shoppingcart"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Header slutt -->
+    <!-- Main Start  -->
+    <aside>
+        <section class="section-left">
+        <button class="btn btn1">0-3år</button>
+        <button class="btn btn2">3-7år</button>
+        <button class="btn btn3">7år++</button>
+    </section>
+    </aside>
+    <main>
+      
+        <section class="section-right">
+            <div class="row-title">
+                <h2>Om oss</h2>
+                
+                <img src="./img/bars-solid.svg" alt="menu-icon" class="menu-icon" id="menuToggle">
+                
+            </div>
+            <ul class="menu">
+                <li><a href="#">Kontakt oss</a></li>
+                <li ><a href="index.html">Hjem</a></li>
+                <li><a href="om-oss.html">Om Oss</a></li>
+                <li><a href="produkter.html">Produkter</a></li>
+            </ul>
+            <div class="row-about">
+                
+                    <div class="box-about">
+                        <h1>Om oss</h1>
+                        <div class="about-text">
+                            
+                            <article>Imperdiet sed euismod nisi porta lorem mollis
+                                aliquam ut porttitor. Vitae suscipit tellus
+                                mauris a diam maecenas sed enim. Volutpat
+                                ac tincidunt vitae semper quis. Gravida neque 
+                                
+                                convallis a cras semper auctor neque vitae.
+                                Scelerisque varius morbi enim nunc faucibus
+                                a pellentesque sit amet. Nunc vel risus
+                                commodo viverra maecenas accumsan lacus
+                                vel. Dolor sit amet consectetur adipiscing elit
+                                duis tristique sollicitudin nibh.</article>
+                            <img src="./img/Mini-mennske.png" alt="boy" >
+                        </div>
+                        
+                        
+                    </div>
+               
+            </div>
+        </section>
+    </main>
+    
+    <!-- Main slutt  -->
+
+    <!-- footer start  -->
+    <footer>
+        <a href="#"><img src="./img/instagram.svg" alt="instagram" ></a>
+        <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
+        <a href="#"><img src="./img/facebook-messenger.svg" alt="facebook-messenger"></a>
+    </footer>
+
+    <!-- footer slutt  -->
+
+
+
+    <!-- script for hambrugermeny  -->
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menuToggle');
+    const menu = document.querySelector('.menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('show-menu');
+    });
+});
+
+
+</script>
+</body>
+</html>

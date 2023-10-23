@@ -3,36 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"
-    >
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="Css/font/css/solid.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+
     <title>Mini-sko</title>
 </head>
 
 <body>
-<div id="grid-container">
-    
-    <Header id="Header">
-        <h2>Mini-sko</h2>
-        <img   class="Logo" src="img/Logo front.png" alt="Logo">
+    <!-- Header Start -->
+    <header>
+        <a class="logo-img" href="index.html">
+            <img class="logo" src="./img/Logo front.png" alt="Logo">
+        </a>
         <nav>
-            <ul class="nav_links">
-                <li> <a href="om-oss.html">Om oss</a></li>
-                <li><a href="kontakt-oss.html">kontakt-oss</a></li>
-                <li><a href="produkter.html">produkter</a></li>
+            <ul>
+                <li><a href="#">Kontakt oss</a></li>
+                <li><a href="om-oss.html">Om Oss</a></li>
+                <li><a href="Produkter.html">Produkter</a></li>
+                <a href="#"><img class="cart-icon" src="./img/cart-shopping-solid.svg" alt="shoppingcart"></a>
             </ul>
         </nav>
-        <a class="handlekurv" href="#"><button>handlekurv</button></a>
-    </Header>
+    </header>
 
-
+    <!-- Header slutt -->
+    <!-- Main Start  -->
+    <aside>
+        <section class="section-left">
+        <button class="btn btn1">0-3år</button>
+        <button class="btn btn2">3-7år</button>
+        <button class="btn btn3">7år++</button>
+    </section>
+    </aside>
     <main>
-        <h1>Mini-sko</h1>
+        
+        <section class="section-right">
+            <div class="row-title">
+                <h1>velkommen til MiniFot dine barnesko på nett.</h1>
 
+                <img src="./img/bars-solid.svg" alt="menu-icon" class="menu-icon" id="menuToggle">
+        
+                
+            </div>
+            <ul class="menu">
+                <li ><a href="index.html">Hjem</a></li>
+                <li><a href="om-oss.html">Om Oss</a></li>
+                <li><a href="Produkter.html">Produkter</a></li>
+                <li><a href="#">Handlekurv</a></li>
+            </ul>
+            
+            <div class="row-main">
+                <div class="box">
+                    <h3>Ukens Tilbud kun</h3>
+                    <h3 class="price">998Kr</h3>
+                    <h2>Under Armour</h2>
+                    <a href="produkter.html">
+                    <img src="./img/under armor rosa.png" alt="shoes" >
+                </a>
+    
+                </div>
+                <div class="box">
+                    <h3>Størrelse-guiden</h3>
+                    
+                    <p>Imperdiet sed euismod nisi porta
+                        lorem mollis aliquam ut porttitor.
+                        Vitae suscipit tellus mauris a
+                        diam maecenas sed enim.
+                        Volutpat ac tincidunt 
+                        
+                        vitae semper quis. </p>
+                </div>
+            </div>
+        </section>
     </main>
+    
+    <!-- Main slutt  -->
 
 
+    <!-- footer start  -->
     <footer>
+        <a href="#"><img src="./img/instagram.svg" alt="instagram" ></a>
+        <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
+        <a href="#"><img src="./img/facebook-messenger.svg" alt="facebook-messenger"></a>
     </footer>
-</div>
+
+    <!-- footer slutt  -->
+
+
+    <!-- script for hambrugermeny  -->
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menuToggle');
+    const menu = document.querySelector('.menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('show-menu');
+    });
+});
+
+
+</script>
 </body>
 </html>
